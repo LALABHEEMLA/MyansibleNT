@@ -1,0 +1,8 @@
+---
+hosts: 192.168.1.147
+become: yes
+tasks:
+- name: i want to install webserver
+  apt:
+    name: apache2
+    state: present
